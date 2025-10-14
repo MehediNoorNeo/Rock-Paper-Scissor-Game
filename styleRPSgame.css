@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #B5FED9;
+}
+h1{
+    padding: 10px;
+    background-color: rgb(23, 21, 51);
+    color: white;
+}
+i{
+    font-size: 120px; /* Made icons larger */
+    text-shadow: 8px 8px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Horizontally flip the rock icon */
+#rock-icon{
+    transform: rotate(90deg);
+    color: #92DCE5;
+}
+#paper-icon{
+    color: #A379C9;
+}
+#scissors-icon{
+    color: #EFAAC4;
+}
+
+.game {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 80px 0;
+    gap: 40px; /* Added space between items */
+}
+
+.choice {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.6s;
+}
+
+.choice:hover {
+    border-radius: 50%;
+    background-color: #F9ECCC;
+    transform: scale(1.12);
+    box-shadow: 8px 8px 6px rgb(53, 35, 35, 0.5);
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 20px;
+}
+.score p{
+    text-align: center;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+
+}
+#your-score, #computer-score {
+    user-select: none;
+    font-family:'Gill Sans', 'Gill Sans MT';
+    font-weight: 500;
+    font-size: 4rem;
+}
+.msg-container {
+    margin-top: 20px;
+}
+#message {
+    padding: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    display: inline;
+}
+.reset-button {
+    margin-top: 40px;
+    padding: 0.5rem 1rem;
+    background-color: darkcyan;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.reset-button:active {
+    transform: scale(0.95);
+}
+
